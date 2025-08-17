@@ -21,11 +21,9 @@ Follow these steps carefully to set up and run the project on your local machine
 
 ### Step 1: Download and Set Up the Project Files
 
-1.  On the GitHub repository page, click the green **`< > Code`** button.
-2.  Select **"Download ZIP"**.
-3.  Find the downloaded ZIP file (e.g., `PROM-main.zip`) in your Downloads folder.
-4.  **Create a new, empty folder** on your computer. You can name it `CardioCare_Project`.
-5.  **Unzip** the downloaded file and move all the contents into the `CardioCare_Project` folder you just created.
+1.  On the GitHub repository page **"Download ZIP"**.
+2.  Find the downloaded ZIP file (e.g., `CardioCare-AI-Suite.zip`) in your Downloads folder.
+3.  **Unzip** the downloaded file.
 
 
 ### Step 2: Set Up the Python Environment
