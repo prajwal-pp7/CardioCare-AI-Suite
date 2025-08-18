@@ -38,7 +38,7 @@ model = load_model()
 
 def page_home():
     st.title("Welcome to CardioCare AI Hospital")
-    st.markdown("#### Your trusted partner in advanced cardiac care.")
+    st.markdown("#### Your trusted partner in advanced")
     st.markdown("---")
     try:
         st.image("image_cac28b.png",use_column_width='auto') 
@@ -133,8 +133,8 @@ def page_doctors():
     st.markdown("---")
     
     doctors_data = {
-        "Photo": ["🧑‍⚕️", "👩‍⚕️", "👨‍⚕️"],
-        "Doctor Name": ["Dr. Sandhya Singh","Dr. Aditya Jadhav","Dr. Priya Meena"],
+        "Photo": ["👩‍⚕️", "👩‍⚕️", "👩‍⚕️"],
+        "Doctor Name": ["Dr. Sandhya Singh","Dr. Aditi Singh","Dr. Priya Meena"],
         "Degree": ["MD, FACC", "MBBS, DM (Cardiology)","MD,PhD"],
         "Specialization": ["Chief of Cardiology, Interventional Cardiology","Electrophysiology","Preventive Cardiology"],
         "Timings": ["Mon-Fri (9 AM - 7 PM)","Mon,Wed,Fri (1 PM - 5 PM)","Tue, Thu (11 AM - 3 PM)"]
@@ -151,18 +151,18 @@ def page_locations():
     with col1:
         st.subheader("Main Campus (Aligarh)")
         st.markdown("""
-        **Address:** Aligarh, UP
-        **Phone:** +91 7721974793
-        **Services:** Full-service cardiac hospital, 24/7 Emergency
+        - **Address:** Aligarh, UP
+        - **Phone:** +91 7721974793
+        - **Services:** Full-service cardiac hospital, 24/7 Emergency
         """)
         map_data_main=pd.DataFrame({'lat':[27.9014],'lon':[78.0773]})
         st.map(map_data_main,zoom=12)
     with col2:
         st.subheader("Kanpur Heart Clinic (Replica)")
         st.markdown("""
-        **Address:** Moti Jheel
-        **Phone:** +91 7712797439
-        **Services:** Outpatient consultations, Diagnostic services
+        - **Address:** Moti Jheel
+        - **Phone:** +91 7712797439
+        - **Services:** Outpatient consultations, Diagnostic services
         """)
         map_data_replica=pd.DataFrame({'lat':[26.4724], 'lon':[80.3031]})
         st.map(map_data_replica, zoom=12)
