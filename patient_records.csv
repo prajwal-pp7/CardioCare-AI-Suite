@@ -1,0 +1,4 @@
+Patient ID,Patient Name,Contact Info,Age,Sex,Prediction Result,Confidence Score
+1,A,1234567890,50,Male,High Risk,56.94%
+2,B,1234567809,50,Female,High Risk,72.13%
+3,C,1234567089,50,Male,High Risk,56.94%
