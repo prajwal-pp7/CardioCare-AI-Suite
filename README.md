@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #  [CardioCare AI Suite](https://cardiocare-ai-suite.streamlit.app/)
-=======
-#  CardioCare AI Suite
->>>>>>> 229c23ce4ac2b6e62eb14a6d9fee98c7bee6a4d2
 
 This project is an interactive web application built with Streamlit that uses a machine learning model to predict the likelihood of heart disease. It features a multi-page portal for patient record management, doctor information, and hospital locations.
 
@@ -90,3 +86,4 @@ This step creates a dedicated, isolated environment for the project to avoid con
      ```
 
 3.  A new tab will automatically open in your web browser with the running application.
+
