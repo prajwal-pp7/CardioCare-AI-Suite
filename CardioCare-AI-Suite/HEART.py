@@ -41,10 +41,10 @@ def page_home():
     st.markdown("#### Your trusted partner in advanced")
     st.markdown("---")
     try:
-        st.image("image_cac28b.png",use_column_width='auto') 
+        st.image("image_cac28b.jpg",use_column_width='auto') 
         st.success("Use the navigation menu on the left to access our tools and information.")
     except FileNotFoundError:
-        st.error("Error: The hospital image ('image_cac28b.png') was not found. Please make sure it's in the project folder.")
+        st.error("Error: The hospital image ('image_cac28b.jpg') was not found. Please make sure it's in the project folder.")
 
 def page_prediction():
     st.title("❤️ Heart Health Prediction Tool")
@@ -189,7 +189,7 @@ def page_contact():
     """)
 
 def main():
-    st.sidebar.image("logo.png", width=250)
+    st.sidebar.image("logo.jpg", width=250)
     st.sidebar.title("Navigation Menu")
     page_options = ["Home", "Heart Disease Prediction","Patient Record Lookup","Meet Our Doctors","Hospital Locations","Contact & Hours"]
     page = st.sidebar.radio("Go to", page_options)
