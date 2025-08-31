@@ -16,7 +16,7 @@ RECORDS_FILE='patient_records.csv'
 
 def load_records_df():
     if os.path.exists(RECORDS_FILE):
-        return pd.read_csv(RECORDS_FILE)
+        return pd.read_csv(RECORDS_FILE, dtype={'Patient ID': str})
     else:
         return pd.DataFrame(columns=['Patient ID','Patient Name','Contact Info','Age','Sex','Prediction Result','Confidence Score'])
 
@@ -37,14 +37,22 @@ def load_model():
 model = load_model()
 
 def page_home():
-    st.title("Welcome to CardioCare AI Hospital")
-    st.markdown("#### Your trusted partner in advanced")
-    st.markdown("---")
+    st.markdown("""
+        <style>
+            .block-container {
+                padding: 0rem !important;
+            }
+            .main > div {
+                overflow: hidden;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
     try:
-        st.image("image_cac28b.jpg",use_column_width='auto') 
-        st.success("Use the navigation menu on the left to access our tools and information.")
+        st.image("image_cac28b.jpg", use_container_width=True)
     except FileNotFoundError:
         st.error("Error: The hospital image ('image_cac28b.jpg') was not found. Please make sure it's in the project folder.")
+
 
 def page_prediction():
     st.title("❤️ Heart Health Prediction Tool")
@@ -125,7 +133,9 @@ def page_records():
                 del st.session_state.otp; del st.session_state.found_record
             else: st.error("Invalid OTP.")
     st.markdown("---"); st.subheader("All Saved Records")
-    st.dataframe(df)
+    df_display = df.copy()
+    df_display.index = range(1, len(df_display) + 1)
+    st.dataframe(df_display)
 
 def page_doctors():
     st.title("🩺 Meet Our Cardiology Team")
