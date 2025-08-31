@@ -36,20 +36,19 @@ This step creates a dedicated, isolated environment for the project to avoid con
 
 2.  Navigate into your project folder using the `cd` command.
 
-        ``` bash
+    ``` bash
         cd path/to/your/CardioCare_Project
-        ```
+    ```
+4.  Create a virtual environment by running:
 
-3.  Create a virtual environment by running:
-
-        ``` bash
+    ``` bash
         python -m venv venv
-        ```
-
-4.  Activate the environment:
+    ```
+    
+5.  Activate the environment:
     * **On Windows:**
         
-        ``` bash
+       ``` bash
         venv\Scripts\activate
         ```
         
@@ -70,9 +69,9 @@ This step creates a dedicated, isolated environment for the project to avoid con
 2.  Install all the necessary libraries at once by running the following command. 
     It reads the `requirements.txt` file and installs everything automatically. 
         
-        ``` bash
+    ``` bash
         pip install -r requirements.txt
-        ```
+     ```
     
 ------------------------------------------------------------------------
 
@@ -82,8 +81,8 @@ This step creates a dedicated, isolated environment for the project to avoid con
 
 2.  Launch the Streamlit application with this final command:  
         
-        ``` bash
+    ``` bash
         streamlit run HEART.py
-        ```
+     ```
 
 3.  A new tab will automatically open in your web browser with the running application.
